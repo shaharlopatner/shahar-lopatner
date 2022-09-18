@@ -1,0 +1,271 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    align-items: center;
+  justify-content: center;
+    background-color: #e8d29e;
+  
+}
+
+.big_container{
+    align-items: center;
+    justify-content: center;
+      background-color: #e8d29e;   
+      display: grid;
+      
+}
+
+#title {
+    /* background-color: lightslategrey; */
+    text-align: center;
+}
+
+
+.regular_blook {
+    
+    text-align: center;
+} 
+
+a {
+    color: blue;
+    text-decoration-line: none;
+}
+
+a:hover {
+    background-color: #d9c086;
+}
+
+/* a:active {
+    color: red;
+} */
+
+.container {
+    display: grid;
+    text-align: center;
+ margin-bottom: 50px;
+ margin-left: 50px;
+ margin-right: 50px;
+ margin-top: 50px;
+ 
+
+  
+    grid-template-areas:
+     'ghead    ghead     ghead' 
+     'up_left  up_middle  up_right'
+     'down_left down_middle down_right'
+     ;
+
+}
+
+.topdiv{
+    text-align: center;
+    
+}
+
+img{
+    transition: transform .2s; /* Animation */
+    width:270px ;
+    height:170px;
+}
+
+img:hover{
+    transform: scale(1.15);
+}
+
+.gridhead {
+    text-align: center;
+    grid-area: ghead;
+  
+}
+
+.gridvegan {
+    grid-area: up_left;
+
+    
+}
+.gridvegan label{
+        font-size: 18px;
+    text-align: center;
+}
+
+.gridmeatfood {
+    grid-area: up_right;
+
+}
+
+.gridvegifood{
+    grid-area: up_middle;
+    
+}
+.gridessert{
+    grid-area: down_left;
+    
+}
+
+.gridgridbake{
+    grid-area: down_middle;
+   
+}
+
+.gridfish{
+    grid-area: down_right;
+   
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        background-color: #f0dfa9;
+        display: grid;
+        grid-template-areas:
+         'ghead  ghead' 
+         'up_left  up_middle'
+         'up_right down_left'
+         'down_middle  down_right';
+
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(224, 148, 5, 0.466);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(250, 201, 96);
+  }
+  
+  .active {
+    background-color: #c7841f;
+  }
+
+  .active:hover {
+    background-color: rgb(250, 201, 96);
+  }
+
+  .not_active {
+    background-color: rgba(224, 148, 5, 0.466);
+  }
+
+
+  form .field {
+    margin-bottom: 20px;
+  }
+  form .input-field {
+    position: relative;
+    height: 55px;
+    width: 100%;
+  }
+  .input-field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    border: 1px solid #d1d1d1;
+  }
+  .invalid input {
+    border-color: #d93025;
+  }
+  .input-field .show-hide {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #919191;
+    cursor: pointer;
+    padding: 3px;
+  }
+  .field .error {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    color: #d93025;
+    font-size: 13px;
+    display: none;
+  }
+  .invalid .error {
+    display: flex;
+  }
+  .error .error-icon {
+    margin-right: 6px;
+    font-size: 15px;
+  }
+  .create-password .error {
+    align-items: flex-start;
+  }
+  .create-password .error-icon {
+    margin-top: 4px;
+  }
+  .button {
+    margin: 25px 0 6px;
+  }
+  .button input {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgb(199, 143, 20);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button input:hover {
+    background-color: #f1cf7f;
+  }
+  .register_container {
+    position: relative; 
+    max-width: 370px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 8px;
+    background-color:#d9c086;
+     /* align-items:center; */
+    /* justify-content: center;  */
+    display:grid;
+    margin-top: 60px;
+    
+  }
+  .register_container header {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    align-items:center;
+    display:grid;
+    justify-content: center; 
+ 
+  }
+ 
+
+  
+  /* .divlogin{
+    text-align: left;
+    grid-area: glogin; 
+
+  } */
+
+ 
+ 
