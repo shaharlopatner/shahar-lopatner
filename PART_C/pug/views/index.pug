@@ -1,0 +1,64 @@
+extends layout 
+block  content 
+        
+        .topdiv      
+                p
+                        b.regular_blook Welcome to &quot;On the Table&quot; community.
+                        br
+                        |      On this site you can enjoy a wide variety of recipes uploaded by community members and share your own recipes. 
+                        br
+                        |      From the simplest recipes to complicated and detailed recipes. 
+                        br
+                        |      Join our community! 
+                        br
+                        br
+                
+        
+                form#searchform(action="Searchbyingredients" method="get")
+                        input#search_input(type='text', name='search_input', placeholder='Choose ingredients', required)
+                        input#SearchBuntton.button(type="submit", value="Search")
+                    
+                
+        .container                        
+                .images
+
+                                .gridvegan
+                                        label(for='vegan') Vegan
+                                        br
+                                        img.ott_img(src='vigan.jfif')
+                                
+                                .gridmeatfood
+                                        label(for='meat') Meat
+                                        br
+                                        img.ott_img(src='meat.jfif')
+                                .gridvegifood
+                                        label(for='vegi') Vegetarian
+                                        br
+                                        img.ott_img(src='pasta.jfif')
+                                .gridessert
+                                        label(for='dessert') Desserts
+                                        br
+                                        img.ott_img(src='cake.jfif')
+                                .gridbake
+                                        label(for='bake') Pastries
+                                        br
+                                        img.ott_img(src='bread.jfif')
+                                .gridfish
+                                        label(for='fish') Fish
+                                        br
+                                        img.ott_img(src='fish.jfif')
+                p  Choose Your Favorite Category
+                form#searchform(action="Searchbycategory" method="get") 
+                        select#category(list="categories", name="category",placeholder='Choose Category' ) 
+                                br
+                                option(value='Vegan') Vegan
+                                option(value='Vegetarian') Vegetarian
+                                option(value='Meat') Meat
+                                option(value='Fish') Fish
+                                option(value='Pastries') Pastries
+                                option(value='Desserts') Desserts 
+                                input#SearchBuntton.button(type="submit", value="Search")                              
+                                        
+
+               
+                                                

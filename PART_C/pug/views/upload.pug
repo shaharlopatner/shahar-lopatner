@@ -1,0 +1,33 @@
+extends layout 
+block  content 
+
+    .topdiv
+        h1#title Upload your own recipe
+        p
+        b.regular_blook Welcome to the &quot;On the Table&quot; community.
+        br
+        |         On this page you can share your recipes with our community
+        .container
+            
+                form(action='/InsertNewRecipe' method='POST')
+                    label(for='Recipename') Recipe name
+                    br
+                    input(type="text", name="RecipeName", required)
+                    br
+                    label(for='Category') Choose category from the list:
+                    br
+                    select(list='Category', name='category', placeholder='Choose Category', required)
+                        br
+                        option() 
+                        option(value='Vegan') Vegan
+                        option(value='Vegetarian') Vegetarian
+                        option(value='Meat') Meat
+                        option(value='Fish') Fish
+                        option(value='Pastries') Pastries
+                        option(value='Desserts') Desserts
+                    br
+                    label(for='paragraph_text') Recipe's Details
+                    br
+                    textarea(name='paragraph_text' cols='50' rows='10')
+                    br
+                    input#UpladBuntton.button(type='submit', value='Upload')

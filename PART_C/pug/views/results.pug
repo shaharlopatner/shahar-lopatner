@@ -1,0 +1,20 @@
+extends layout 
+block content
+    .container
+        form#results(action="http://localhost:3030/home", method="get")
+            h2#titel  #{var1} 
+            table.styled-table
+                thead
+                    tr
+                        th Name 
+                        th Category 
+                        th Recipe
+                    
+
+                each n in pple
+                    tr
+                    td= n.RecipeName 
+                    td= n.category
+                    td= n.paragraph_text 
+            input#Back.button(type='submit' value='Back to search' style='width: 140px;')
+            

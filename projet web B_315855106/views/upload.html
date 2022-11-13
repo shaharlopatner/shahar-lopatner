@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+<title>Vegan</title>
+<link rel="stylesheet" href="../static/ott.css">
+</head>
+<body>
+    <div class="nav_bar">
+        <ul>
+            <li><a class="not_active" href="ott.html">Home</a></li>
+            <li><a class="not_active" href="login_screen.html">Login</a></li>
+            <li><a class="not_active" href="register_screen.html">Register</a></li>
+            <li><a class="active" href="upload.html">Upload</a></li>
+        </ul> 
+    </div>
+
+    <div class="topdiv">
+    <h1 id="title">Upload your own </h1>
+    <P>
+        <b class="regular_blook">Welcome to the "On the Table" community.</b> <br>
+        On this page you can share your recipes with our community
+    </P>
+</div>
+<div class="big_container">
+    <div class="register_container">
+    <label for="name"><b>Recipe name</b></label>
+          <input type="name" name="Recipe_name" id="Recipe_name" required><br>
+
+
+    <label for="browser">Choose category from the list:</label>
+    <input list="browsers" name="category" id="category">
+    <datalist id="browsers">
+      <option value="Vegan">
+      <option value="Vegetarian">
+      <option value="Meat">
+      <option value="Fish">
+      <option value="Pastries">
+     <option value="Desserts">
+    </datalist>
+    <br>
+    <label for="paragraph_text">Details of the recipe</label>
+    <textarea name="paragraph_text" cols="50" rows="5"></textarea>
+    <br>
+    <label for="image">Recipe image</label><br>
+    <input type="image" src="img_submit.gif" alt="upload" width="48" height="48">
+    <div class="input-field button">
+        <input type="submit" value="Upload Now" />
+      </div>
+  </div>
+
+</div>
+</body>
+
+</html>

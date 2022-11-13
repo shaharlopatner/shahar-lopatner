@@ -1,0 +1,31 @@
+
+extends layout 
+block  content 
+    .topdiv
+        h1#title Register
+        p
+        b.regular_blook Please fill in this form to register.
+        .container
+            
+                form(action='/CreateNewUser' method='POST')
+                    label(for='UserName') Full Name
+                    br
+                    input(type='text', placeholder='Enter your Name', name='UserName', autocomplete='on', pattern='[a-zA-Z ]{1,40}', required)
+                    br
+                    label(for='UserMail') Email 
+                    br
+                    input(type='email', placeholder='Enter your Email', name='UserMail', required, pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')
+                    br
+                    label(for='password') Password
+                    br
+                    input#password(type='password', placeholder='Choose your password', name='password',  title='Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters', onkeyup='check1();' ,required,  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}" )
+                    br
+                    label(for='Cpassword') Confirm Password 
+                    br
+                    input#Cpassword(type='password' ,placeholder='Enter your Password again' ,name='Cpassword' ,onkeyup='check1()' ,required, pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}")
+                    br
+                    p#matched
+                    br
+                    input#CreateBuntton.button(type='submit', value='Register')
+    
+        
